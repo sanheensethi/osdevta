@@ -1,0 +1,194 @@
+
+
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+         body{
+      background-color:#1a1716;
+      color:#ab582e;
+    }
+      iframe{
+        width: 200%;
+        border: 2px solid #ccc;
+      }
+    </style>
+    <title>4. Problems on Paging</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="">Course</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+      </li>
+
+      <!-- All Courses Links Here -->
+          
+          
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Operating System
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="navigationcourses"></span>
+        </ul>
+      </li>
+          
+          
+          
+          
+          
+          
+
+      <!-- Add Particular Course Links Here  -->
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Operating System Part 2
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="coursecontent"></span>
+              
+        </ul>
+      </li>
+
+      <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)" tabindex="-1">&copy; Maintained By Sanheen Sethi</a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3 col col-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+
+      </div>
+      </div>
+    </div>
+    </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="courses.js"></script>
+    <script src="osp2.js"></script>
+    
+    
+    <script type="text/javascript">
+       $(document).ready(function(){
+
+          /*
+          Add Courses
+          */
+          
+
+      heading = new Array();
+      link = new Array();
+
+      heading.push('1. Important Point');
+      link.push('<iframe src="1. Important point.html" frameborder="0"></iframe>');
+
+      heading.push('2. Basics of Binary numbers.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/g4hVHAhY#KVc29la3OGFIWDbccrF9P0mCxom2vv7nFGkHT4XxMsM" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('3. Basics of Memory Management.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Yh51iIia#aou1Aq9iXm3KLs0Th71r88coS8Bj5DKHp1HRtCR55yQ" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('4. Address Space and Types of allocation.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/ggg3XCAI#N_MaVkU2hGXILpwafE7WGsyRJGfALfEgh0ImkiwJoBk" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('5. Fixed Partitioning.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/E9wlESQY#pHvCv2rMoHG32Bk94-Yw5YqgXalfXbE2YvX4SaMiulI" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('6. Variable Partitioning.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/044F0K6T#7ZSXL2uH18fmwGyPKRt8A4-nWzkl2C89mNlFAhMKDf8" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('7. Memory Allocation Algorithms.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/V0pXxKTL#D7hGLYcfUszeuNlz2yhNQet-Rk-3Yj8HaX3feCCgMcY" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('8. Problem.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/dg510QyT#ItAQhqF7vEHBKkiUYleXXWhOrPVyzDCiC3efUWNoU1o" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('9. Problem continued.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/pkxFwIzK#P2cCLGD0qaLd19B9tu6walrT-OB2QSYRKx_x58bLL9M" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('10. Important point to note.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/59xHEQ4a#w8x0Xqh1E7-ZSnIQOsUaPFn9v8GHkaWVjpgmhiWp7eE" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('11. Problem.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/V14zUSZA#7fLf0IcjbP-pXVyFqcoB0noW7WAUXs-ez6rdxHrpOV0" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('12. Binary addressing revisited.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/1wwxDQaB#CUWyYD9sIp1UcjvJa0zDdRoXgiCJ15JHkjsixvk0S1M" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('13. Example to explain binary addressing concepts.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/g0xnXaKR#APbS1IJhSdXdFFi_U3ipwpJihj_BDd3ez1qs6WDBEII" allowfullscreen ></iframe> ');
+      
+
+    
+
+          /* Put Content Heading and Frame Here */
+          
+          
+          /***** END *****/
+          
+          data1= "";
+          data2 = "";
+          for(i = 0;i<heading.length;i++){
+            data1 += '<button class="nav-link" id="v-pills-home-tab'+i+'"data-bs-toggle="pill" data-bs-target="#v-pills-home'+i+'" type="button" role="tab" aria-controls="v-pills-home'+i+'" aria-selected="true">'+heading[i]+'</button>';
+            
+            data2 +=  '<div class="tab-pane fade" id="v-pills-home'+i+'" role="tabpanel" aria-labelledby="v-pills-home-tab'+i+'">'+link[i]+'</div>';
+          }
+          
+          $("#v-pills-tab").html(data1);
+          $("#v-pills-tabContent").html(data2);
+       });;
+    </script>
+  </body>
+</html>
+
+
+    

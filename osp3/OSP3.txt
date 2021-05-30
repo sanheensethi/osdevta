@@ -1,0 +1,19 @@
+1. Introduction
+2. Critical Section and Non Critical Section
+3. Various Conditions of a Synchronization Mechanism
+4. Lock Synchronization Mechanism
+5. TSL Synchronization Mechanism
+6. Problems on TSL
+7. Strict Alternation Synchronization Mechanism
+8. Disable Interrupts Synchronization Mechanism
+9. Interested Variables Synchronization Mechanism
+10. Peterson Synchronization Mechanism
+11. Problems on Non busy Waiting Synchronization Techniques
+12. Producer Consumer Problem
+13. Binary Semaphores
+14. Problems on Binary Semaphore
+15. Dining Philosopher Problem
+16. Counting Semaphore
+17. Deadlocks
+18. Deadlock Handling Methods
+19. Bonus  How to proceed further

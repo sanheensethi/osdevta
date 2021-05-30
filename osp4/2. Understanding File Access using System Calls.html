@@ -1,0 +1,156 @@
+
+
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+         body{
+      background-color:#1a1716;
+      color:#ab582e;
+    }
+      iframe{
+        width: 200%;
+        border: 2px solid #ccc;
+      }
+    </style>
+    <title>OS Part 4</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="">Course</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+      </li>
+
+      <!-- All Courses Links Here -->
+          
+          
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Operating System
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="navigationcourses"></span>
+        </ul>
+      </li>
+          
+          
+          
+          
+          
+          
+
+      <!-- Add Particular Course Links Here  -->
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Operating System Part 3
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="coursecontent"></span>
+              
+        </ul>
+      </li>
+
+      <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)" tabindex="-1">&copy; Maintained By Sanheen Sethi</a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3 col col-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+
+      </div>
+      </div>
+    </div>
+    </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="courses.js"></script>
+    <script src="osp4.js"></script>
+    
+    
+    <script type="text/javascript">
+       $(document).ready(function(){
+
+          /*
+          Add Courses
+          */
+          
+      heading = new Array();
+      link = new Array();
+
+      heading.push('1. create () system call.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/0g51BAaZ#aZd819bpNeQYPxxOQ8frvqJQdd0-6ccQAHAfrhHkd-E" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('2. Finding Logical Block Number and Physical Block Number using Logical Byte Number.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Ewpxyaia#eVC2R7I9nIEw9EFpQK7ndaYo4qJrKXhrm8gaV65QeEk" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('3. open () system call.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/htpjECJZ#qnQQSrYJk21lcsvL4Wia3vtZLqav_-VCr1nKiNfwfpQ" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('4. read () and write () system call.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/Zhp10YBL#nyCv4vVAjbROwtjQbRcvn9s1S3c9hbLQ-0sPQZEfr9k" allowfullscreen ></iframe> ');
+      
+
+    
+      heading.push('5. Operations of a File.mp4');
+      link.push('<iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/58wVmAgY#rMUImzaZZhunZMQhXsP5YUgmYAl-wjGXU1v3XEFW7dA" allowfullscreen ></iframe> ');
+      
+
+    
+
+
+          /* Put Content Heading and Frame Here */
+          
+          
+          /***** END *****/
+          
+          data1= "";
+          data2 = "";
+          for(i = 0;i<heading.length;i++){
+            data1 += '<button class="nav-link" id="v-pills-home-tab'+i+'"data-bs-toggle="pill" data-bs-target="#v-pills-home'+i+'" type="button" role="tab" aria-controls="v-pills-home'+i+'" aria-selected="true">'+heading[i]+'</button>';
+            
+            data2 +=  '<div class="tab-pane fade" id="v-pills-home'+i+'" role="tabpanel" aria-labelledby="v-pills-home-tab'+i+'">'+link[i]+'</div>';
+          }
+          
+          $("#v-pills-tab").html(data1);
+          $("#v-pills-tabContent").html(data2);
+       });;
+    </script>
+  </body>
+</html>
+
+
+    
